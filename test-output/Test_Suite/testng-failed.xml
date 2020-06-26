@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Test_Suite]" guice-stage="DEVELOPMENT">
+  <test parallel="none" name="Test(failed)">
+    <classes>
+      <class name="Page_factory.surety">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- Page_factory.surety -->
+      <class name="Page_factory.customer">
+        <methods>
+          <include name="createcustomer_contactinfo"/>
+          <include name="createcustomer_businesscontact"/>
+          <include name="login"/>
+          <include name="createcustomer_premiumquotes"/>
+          <include name="createcustomer_bondlog"/>
+          <include name="createcustomer_reports"/>
+          <include name="createcustomer_wip"/>
+          <include name="createcustomer_finanalysis"/>
+          <include name="createcustomer_underwritinginfo"/>
+          <include name="createcustomer_bidbondlog"/>
+        </methods>
+      </class> <!-- Page_factory.customer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test_Suite] -->

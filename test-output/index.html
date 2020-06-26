@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 11 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\mukesh.l.SIGMAINFOBLR\eclipse-workspace-original\CSBA\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 11 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="accdeptsurety">accdeptsurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="companysurety">companysurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_bidbondlog">createcustomer_bidbondlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_bondlog">createcustomer_bondlog</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_businesscontact">createcustomer_businesscontact</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_contactinfo">createcustomer_contactinfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_finanalysis">createcustomer_finanalysis</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_premiumquotes">createcustomer_premiumquotes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_reports">createcustomer_reports</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_underwritinginfo">createcustomer_underwritinginfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="createcustomer_wip">createcustomer_wip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="claimsdebtsurety">claimsdebtsurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="commdebtsurety">commdebtsurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="createsurety">createsurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="homeofficesurety">homeofficesurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.customer" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Page_factory.surety" class="method navigator-link" hash-for-method="underwritingsurety">underwritingsurety</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Page_factory.customer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_bidbondlog">
+                  </a> <!-- createcustomer_bidbondlog -->
+                  <span class="method-name">createcustomer_bidbondlog</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Fiscal Year End] but found [null]
+	at Page_factory.customer.createcustomer_bidbondlog(customer.java:150)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_bondlog">
+                  </a> <!-- createcustomer_bondlog -->
+                  <span class="method-name">createcustomer_bondlog</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Bid Bond Log] but found [null]
+	at Page_factory.customer.createcustomer_bondlog(customer.java:135)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_businesscontact">
+                  </a> <!-- createcustomer_businesscontact -->
+                  <span class="method-name">createcustomer_businesscontact</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [CPA] but found [null]
+	at Page_factory.customer.createcustomer_businesscontact(customer.java:180)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_contactinfo">
+                  </a> <!-- createcustomer_contactinfo -->
+                  <span class="method-name">createcustomer_contactinfo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Surety Name] but found [null]
+	at Page_factory.customer.createcustomer_contactinfo(customer.java:49)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_finanalysis">
+                  </a> <!-- createcustomer_finanalysis -->
+                  <span class="method-name">createcustomer_finanalysis</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [CPA] but found [null]
+	at Page_factory.customer.createcustomer_finanalysis(customer.java:165)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_premiumquotes">
+                  </a> <!-- createcustomer_premiumquotes -->
+                  <span class="method-name">createcustomer_premiumquotes</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [WIP Date] but found [null]
+	at Page_factory.customer.createcustomer_premiumquotes(customer.java:90)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_reports">
+                  </a> <!-- createcustomer_reports -->
+                  <span class="method-name">createcustomer_reports</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Line Card] but found [null]
+	at Page_factory.customer.createcustomer_reports(customer.java:120)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_underwritinginfo">
+                  </a> <!-- createcustomer_underwritinginfo -->
+                  <span class="method-name">createcustomer_underwritinginfo</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Contract Amount] but found [null]
+	at Page_factory.customer.createcustomer_underwritinginfo(customer.java:75)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createcustomer_wip">
+                  </a> <!-- createcustomer_wip -->
+                  <span class="method-name">createcustomer_wip</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Client Premium Statement
+] but found [null]
+	at Page_factory.customer.createcustomer_wip(customer.java:105)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Page_factory.surety</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="accdeptsurety">
+                  </a> <!-- accdeptsurety -->
+                  <span class="method-name">accdeptsurety</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Bond Numbers ] but found [null]
+	at Page_factory.surety.accdeptsurety(surety.java:138)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="companysurety">
+                  </a> <!-- companysurety -->
+                  <span class="method-name">companysurety</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Minimum Premium] but found [null]
+	at Page_factory.surety.companysurety(surety.java:37)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Page_factory.customer</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Page_factory.surety</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="claimsdebtsurety">
+                  </a> <!-- claimsdebtsurety -->
+                  <span class="method-name">claimsdebtsurety</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="commdebtsurety">
+                  </a> <!-- commdebtsurety -->
+                  <span class="method-name">commdebtsurety</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createsurety">
+                  </a> <!-- createsurety -->
+                  <span class="method-name">createsurety</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeofficesurety">
+                  </a> <!-- homeofficesurety -->
+                  <span class="method-name">homeofficesurety</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="underwritingsurety">
+                  </a> <!-- underwritingsurety -->
+                  <span class="method-name">underwritingsurety</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\mukesh.l.SIGMAINFOBLR\eclipse-workspace-original\CSBA\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;none&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;OS&quot; value=&quot;Windows 10&quot;/&gt;
+    &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Page_factory.customer&quot;/&gt;
+      &lt;class name=&quot;Page_factory.surety&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'Page_factory.customer')
+data.setCell(0, 3, 29693);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'createcustomer_contactinfo')
+data.setCell(1, 2, 'Page_factory.customer')
+data.setCell(1, 3, 19606);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'createsurety')
+data.setCell(2, 2, 'Page_factory.surety')
+data.setCell(2, 3, 17284);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createcustomer_underwritinginfo')
+data.setCell(3, 2, 'Page_factory.customer')
+data.setCell(3, 3, 12283);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'underwritingsurety')
+data.setCell(4, 2, 'Page_factory.surety')
+data.setCell(4, 3, 6286);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'claimsdebtsurety')
+data.setCell(5, 2, 'Page_factory.surety')
+data.setCell(5, 3, 6231);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'homeofficesurety')
+data.setCell(6, 2, 'Page_factory.surety')
+data.setCell(6, 3, 6227);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'commdebtsurety')
+data.setCell(7, 2, 'Page_factory.surety')
+data.setCell(7, 3, 6219);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'accdeptsurety')
+data.setCell(8, 2, 'Page_factory.surety')
+data.setCell(8, 3, 6056);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'companysurety')
+data.setCell(9, 2, 'Page_factory.surety')
+data.setCell(9, 3, 5118);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'createcustomer_wip')
+data.setCell(10, 2, 'Page_factory.customer')
+data.setCell(10, 3, 3080);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createcustomer_bidbondlog')
+data.setCell(11, 2, 'Page_factory.customer')
+data.setCell(11, 3, 3054);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'createcustomer_premiumquotes')
+data.setCell(12, 2, 'Page_factory.customer')
+data.setCell(12, 3, 3053);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createcustomer_businesscontact')
+data.setCell(13, 2, 'Page_factory.customer')
+data.setCell(13, 3, 3051);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'createcustomer_finanalysis')
+data.setCell(14, 2, 'Page_factory.customer')
+data.setCell(14, 3, 3050);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'createcustomer_reports')
+data.setCell(15, 2, 'Page_factory.customer')
+data.setCell(15, 3, 3043);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'createcustomer_bondlog')
+data.setCell(16, 2, 'Page_factory.customer')
+data.setCell(16, 3, 3041);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Page_factory.surety</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">initDriver</span>
+                <br/>
+                <span class="ignored-method-name">closeDriver</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Page_factory.customer</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initDriver(, )</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">6966 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=login status=SUCCESS method=customer.login()[pri:0, instance:Page_factory.customer@...)</span>
+                <span class="method-start">36662 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_contactinfo</span>
+                <span class="method-start">36682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_contactinfo status=FAILURE method=customer.createcustomer_contactinf...)</span>
+                <span class="method-start">56291 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_underwritinginfo</span>
+                <span class="method-start">56296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_underwritinginfo status=FAILURE method=customer.createcustomer_under...)</span>
+                <span class="method-start">68580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_premiumquotes</span>
+                <span class="method-start">68583 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_premiumquotes status=FAILURE method=customer.createcustomer_premiumq...)</span>
+                <span class="method-start">71638 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_wip</span>
+                <span class="method-start">71640 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_wip status=FAILURE method=customer.createcustomer_wip()[pri:0, insta...)</span>
+                <span class="method-start">74722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_reports</span>
+                <span class="method-start">74723 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_reports status=FAILURE method=customer.createcustomer_reports()[pri:...)</span>
+                <span class="method-start">77768 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_bondlog</span>
+                <span class="method-start">77769 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_bondlog status=FAILURE method=customer.createcustomer_bondlog()[pri:...)</span>
+                <span class="method-start">80812 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_bidbondlog</span>
+                <span class="method-start">80813 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_bidbondlog status=FAILURE method=customer.createcustomer_bidbondlog(...)</span>
+                <span class="method-start">83869 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_finanalysis</span>
+                <span class="method-start">83871 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_finanalysis status=FAILURE method=customer.createcustomer_finanalysi...)</span>
+                <span class="method-start">86922 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createcustomer_businesscontact</span>
+                <span class="method-start">86925 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createcustomer_businesscontact status=FAILURE method=customer.createcustomer_busine...)</span>
+                <span class="method-start">89978 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Page_factory.surety</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">createsurety</span>
+                <span class="method-start">89979 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=createsurety status=SUCCESS method=surety.createsurety()[pri:0, instance:Page_facto...)</span>
+                <span class="method-start">107265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">companysurety</span>
+                <span class="method-start">107266 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=companysurety status=FAILURE method=surety.companysurety()[pri:0, instance:Page_fac...)</span>
+                <span class="method-start">112386 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">underwritingsurety</span>
+                <span class="method-start">112389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=underwritingsurety status=SUCCESS method=surety.underwritingsurety()[pri:0, instanc...)</span>
+                <span class="method-start">118676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">claimsdebtsurety</span>
+                <span class="method-start">118677 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=claimsdebtsurety status=SUCCESS method=surety.claimsdebtsurety()[pri:0, instance:Pa...)</span>
+                <span class="method-start">124909 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">accdeptsurety</span>
+                <span class="method-start">124910 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=accdeptsurety status=FAILURE method=surety.accdeptsurety()[pri:0, instance:Page_fac...)</span>
+                <span class="method-start">130967 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">homeofficesurety</span>
+                <span class="method-start">130969 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=homeofficesurety status=SUCCESS method=surety.homeofficesurety()[pri:0, instance:Pa...)</span>
+                <span class="method-start">137197 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">commdebtsurety</span>
+                <span class="method-start">137199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=commdebtsurety status=SUCCESS method=surety.commdebtsurety()[pri:0, instance:Page_f...)</span>
+                <span class="method-start">143419 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Page_factory.customer</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeDriver</span>
+                <span class="method-start">143530 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

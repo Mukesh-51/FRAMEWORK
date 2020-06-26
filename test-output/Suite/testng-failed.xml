@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="OS" value="Windows 10"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test parallel="none" name="Test(failed)">
+    <parameter name="OS" value="Windows 10"/>
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="Page_factory.customer">
+        <methods>
+          <include name="createcustomer_contactinfo"/>
+          <include name="initDriver"/>
+          <include name="createcustomer_businesscontact"/>
+          <include name="createcustomer_premiumquotes"/>
+          <include name="createcustomer_bondlog"/>
+          <include name="createcustomer_reports"/>
+          <include name="createcustomer_wip"/>
+          <include name="closeDriver"/>
+          <include name="createcustomer_finanalysis"/>
+          <include name="createcustomer_underwritinginfo"/>
+          <include name="getResult"/>
+          <include name="createcustomer_bidbondlog"/>
+        </methods>
+      </class> <!-- Page_factory.customer -->
+      <class name="Page_factory.surety">
+        <methods>
+          <include name="companysurety"/>
+          <include name="accdeptsurety"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- Page_factory.surety -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
