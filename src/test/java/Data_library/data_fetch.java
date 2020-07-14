@@ -11,8 +11,10 @@ import org.openqa.selenium.By;
 public class data_fetch {
 
 	public By getLocator(String strElement) throws Exception {
+		
+		//System.getProperty("user.dir") + "/test-output/testReport.html"
 
-		File file = new File("C:\\Users\\mukesh.l.SIGMAINFOBLR\\eclipse-workspace-original\\CSBA\\src\\test\\java\\elements.properties");
+		File file = new File(System.getProperty("user.dir")+"\\src\\test\\java\\elements.properties");
 		FileInputStream fileInput = new FileInputStream(file);
 		Properties properties = new Properties();
 		properties.load(fileInput);
